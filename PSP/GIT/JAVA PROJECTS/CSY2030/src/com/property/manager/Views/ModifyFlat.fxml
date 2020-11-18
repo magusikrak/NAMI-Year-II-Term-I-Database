@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.property.manager.Views.ModifyFlatController">
+   <children>
+      <HBox>
+         <Button contentDisplay="TOP" mnemonicParsing="false" prefHeight="20" prefWidth="20" styleClass="back-button">
+            <graphic>
+               <FontAwesomeIconView glyphName="CHEVRON_CIRCLE_LEFT" size="20" styleClass="back-button-icon" />
+            </graphic>
+         </Button>
+         <Text fill="White" strokeType="OUTSIDE" strokeWidth="0.0" text="Modify Flat" textAlignment="CENTER">
+            <font>
+               <Font name="Bodoni MT" size="46" />
+            </font>
+         </Text>
+      </HBox>
+      <VBox prefHeight="449.0" prefWidth="650.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="address" labelFloat="true" promptText="Address">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="90.0" right="90.0" top="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="noroom" labelFloat="true" prefColumnCount="6" prefHeight="21.0" prefWidth="440.0" promptText="No.Room">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="90.0" right="90.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="nofloors" labelFloat="true" promptText="Floor.No">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="90.0" right="90.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="sellingprice" labelFloat="true" promptText="Selling Price">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="90.0" right="90.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="soldprice" labelFloat="true" promptText="Sold Price">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="90.0" right="90.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="monthlycharge" labelFloat="true" promptText="Monthly Charge ">
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="1.0" left="90.0" right="90.0" top="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+         </children>
+         <padding>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </padding>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="203.0" prefWidth="650.0">
+         <children>
+            <JFXButton onAction="#handleBackButton" prefHeight="74.0" prefWidth="94.0" text="Back" >
+               <HBox.margin>
+                  <Insets top="-30.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="74.0" prefWidth="94.0" text="Modify" onAction="#handleModifyButton">
+               <HBox.margin>
+                  <Insets left="10.0" top="-30.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="74.0" prefWidth="94.0" text="Sold" onAction="#handleSoldButton">
+            <font>
+               <Font size="18.0" />
+            </font>
+            <HBox.margin>
+               <Insets left="10.0" top="-30.0" />
+            </HBox.margin>
+         </JFXButton>
+            <JFXButton prefHeight="74.0" prefWidth="94.0" text="Delete" onAction="#handledeleteButton">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" top="-30.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</VBox>

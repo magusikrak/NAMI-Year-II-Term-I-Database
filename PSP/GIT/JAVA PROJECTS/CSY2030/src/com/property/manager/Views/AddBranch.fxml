@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.Button?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.property.manager.Views.AddBranchController">
+    <HBox>
+               <Button contentDisplay="TOP" mnemonicParsing="false" prefHeight="20" prefWidth="20" styleClass="back-button">
+                  <graphic>
+                     <FontAwesomeIconView glyphName="CHEVRON_CIRCLE_LEFT" size="20" styleClass="back-button-icon" />
+                  </graphic>
+               </Button>
+               <Text fill="White" strokeType="OUTSIDE" strokeWidth="0.0" text=" Add Branch" textAlignment="CENTER">
+                  <font>
+                     <Font name="Bodoni MT" size="46" />
+                  </font>
+               </Text>
+         </HBox>
+      <VBox prefHeight="557.0" prefWidth="650.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="name" labelFloat="true" promptText="Name">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="90.0" right="90.0" top="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="address" labelFloat="true" prefColumnCount="6" prefHeight="21.0" prefWidth="440.0" promptText="Address">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="90.0" right="90.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="phone" labelFloat="true" promptText="Phone Number ">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="90.0" right="90.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="email" labelFloat="true" promptText="Email Address">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="90.0" right="90.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="web" labelFloat="true" promptText="Web Address ">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="90.0" right="90.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="username" labelFloat="true" promptText="Username ">
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="1.0" left="90.0" right="90.0" top="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="password" labelFloat="true" promptText="Password">
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="1.0" left="90.0" right="90.0" top="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+         </children>
+         <padding>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </padding>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="184.0" prefWidth="650.0">
+         <children>
+            <JFXButton onAction="#handleBackButton" prefHeight="74.0" prefWidth="94.0" text="Back">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#handleAddButton" prefHeight="74.0" prefWidth="142.0" text="Add Branch">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <VBox.margin>
+            <Insets bottom="80.0" />
+         </VBox.margin>
+      </HBox>
+</VBox>
