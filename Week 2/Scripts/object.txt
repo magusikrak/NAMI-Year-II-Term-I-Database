@@ -1,0 +1,5 @@
+ create or replace TYPE invoice_address_type as OBJECT(
+     street VARCHAR2(25),
+     city VARCHAR2(25),
+     country VARCHAR2(25)
+ );/

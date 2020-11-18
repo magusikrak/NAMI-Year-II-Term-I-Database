@@ -1,0 +1,11 @@
+-- insert into users values ('sugam',address('pragati tole','kathmandu','nepal'));
+-- -- -- create or replace TYPE invoice_address_type as OBJECT(
+-- -- --      street VARCHAR2(25),
+-- -- --      city VARCHAR2(25),
+-- -- --      country VARCHAR2(25)
+-- -- --  );/
+-- -- create table customers(
+-- --     customer_id NUMBER(6),
+-- --     customer_name VARCHAR2(25),
+-- --     invoice_address invoice_address_type 
+-- -- );
